@@ -1,23 +1,65 @@
 aid: arcturusstudio
+
 name: Arcturusstudio
-description: 'Arcturusstudio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Arcturusstudio, operating as Arcturus Studio, delivers real‑time 3D volumetric video of sports events using computer vision and AI. Their platform enables broadcasters, teams, leagues, and venues to provide immersive, interactive experiences across 2D broadcast, social media, and AR/VR devices. The company also offers data products derived from player and game analytics, supporting coaches and analysts with actionable insights.'
+
 url: https://raw.githubusercontent.com/api-evangelist/arcturusstudio/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- Sports
+- 3DVideo
+- AI
+- Broadcasting
+- DataAnalytics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/arcturusstudio-hosts.yml
+- type: Vendors
+  url: vendors/arcturusstudio-vendors.yml
+- type: PrivacyPolicy
+  url: https://static.arcturus.studio/PrivacyPolicyStatements.html
+- type: Newsroom
+  url: https://arcturus.studio/news/
+- type: DomainSecurity
+  url: security/arcturusstudio-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/arcturusstudio
+  url: https://arcturus.studio
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No developer program or API documentation was found for arcturusstudio.
+  evidence:
+    - url: https://api.arcturus.studio/openapi.json
+      status: 000
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
